@@ -2,7 +2,7 @@ from faker import Faker
 
 faker = Faker()
 
-#Валидная генерация
+#Позитивная генерация
 def generate_registarion():
     random_email = faker.email()
     random_password = faker.password(length=6, special_chars=True, upper_case=True, lower_case=True, digits=True)

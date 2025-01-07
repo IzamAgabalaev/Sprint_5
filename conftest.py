@@ -16,7 +16,7 @@ def driver():
     driver.quit()
 
 
-#Фикстура для авторизации пользователя
+#Фикстура для авторизации
 @pytest.fixture
 def login(driver):
     driver.find_element(*TestLocators.BUTTON_LOGIN_IN_MAIN).click()
